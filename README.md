@@ -1,33 +1,78 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui) and TypeScript
+# CRUD Todo app with NextJS, TypeScript, Cypress, ESLint and ChakraUI with json-server
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app with TypeScript.
+## Introduction
 
-Next.js and chakra-ui have built-in TypeScript declarations, so we'll get autocompletion for their modules straight away.
+> A simple TODO app for POC (Proof of concept) of basic CRUD(Create Read Update and Delete) operations with a type checked TDD (Test Driven Development) approach.
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Provider and theme so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+## Tools and technologies
 
-## Deploy your own
+Below are the main tools and technologies used in this project:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-chakra-ui-typescript)
+- [NextJS](https://nextjs.org)
+- [ReactJS](https://reactjs.org)
+- [Cypress](https://cypress.io)
+- [ChakraUI](https://chakra-ui.com)
+- [ESLint](https://eslint.org)
+- [TypeScript](https://typescriptlang.org)
+- [Formik](https://formik.org)
+- [Axios](https://axios-http.org)
+- [json-server](https://www.npmjs.com/package/json-server)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-chakra-ui-typescript&project-name=with-chakra-ui-typescript&repository-name=with-chakra-ui-typescript)
+## Features
 
-## How to use
+- Create a task
+- Get a task
+- Get all tasks
+- Update a task
+- Delete a task
+- Integration/E2E (End to End) testing suites for the above functionality
 
-### Using `create-next-app`
+## Core Principles
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Below are some principles this project helps to showcase:
+
+- CRUD (Create, Read, Update and Delete)
+- TDD (Test Driven Development)
+- ES6+ (EcmaScript 2015+)
+- React hooks
+
+## Getting Started
+
+### Notes
+
+> Before proceeding to the next section, kindly ensure that your terminal window is on the right directory, you can use the below helper commands to check/confirm:
+
+- `cd` command to change directory e.g. `cd path/to/project`
+- `pwd` command to check your "print working directory"
+- `ls` command to show the content of your current directory
+
+> Please note: The JSON server and (development server + testing environment) are to be executed seprarately by opening different terminal windows or tabs.
+> The project and have been configured to run on certain ports by default, feel free to modify the ports or use the `--port` flag where necessary to change them if you already have another application running on the same port.
+> <br />
+
+> The `json-server` runs on `http://localhost:3001` and `nextjs` server runs on `http://localhost:3000` by default
+
+### Commands
 
 ```bash
-npx create-next-app --example with-chakra-ui-typescript with-chakra-ui-typescript-app
-# or
-yarn create next-app --example with-chakra-ui-typescript with-chakra-ui-typescript-app
+# Install dependencies
+npm install
+
+# Run json-server only
+npm run start-json-server
+
+# Run nextjs development server and cypress testing environment concurrently
+npm run develop
+
+# Other commands can be found on the package.json file in the root directory
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Author
 
-## Notes
+> ### Precious OSSAI
 
-Chakra has supported Gradients and RTL in `v1.1`. To utilize RTL, [add RTL direction and swap](https://chakra-ui.com/docs/features/rtl-support).
-
-If you don't have multi-direction app, you should make `<Html lang="ar" dir="rtl">` inside `_document.ts`.
+- [LinkedIn](https://www.linkedin.com/in/ossaiprecious)
+- [Website](https://www.ossaiprecious.com)
+- [GitHub](https://www.github.com/PeCrio)
+- [Dribbble](https://www.dribbble.com/PeCrio)
+- [Email](mailto:theossaiprecious@gmail.com)
